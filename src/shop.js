@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import uuid from "react-uuid";
+// import uuid from "react-uuid";
 import ItemList from "./itemList.js"
 import AddItem from "./addItem.js"
 
@@ -21,7 +21,8 @@ setItems([
 {
 name: name,
 desc: desc,
-id: uuid()
+// id: uuid()
+id: Date.now()
 }
 ]);
 setName("");
